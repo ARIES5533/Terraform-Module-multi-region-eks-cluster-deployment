@@ -1,13 +1,13 @@
 variable "primary_region" {
   description = "AWS region"
   type        = string
-  default     = ""
+  default     = "eu-west-1"
 }
 
 variable "secondary_region" {
   description = "AWS region"
   type        = string
-  default     = ""
+  default     = "us-west-2"
 }
 
 variable "access_key" {
@@ -19,7 +19,7 @@ variable "access_key" {
 variable "secret_key" {
     type = string
     sensitive = true
-    default = "JCggGLXWIwcD2avjdR/0+sUxk7h48SdLeCoFZhzH"
+    default = ""
 }
 
 variable "vpc_cidr" {

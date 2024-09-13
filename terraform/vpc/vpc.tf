@@ -1,5 +1,5 @@
 
-########Create primary VPC in the eu-west-1 region#####################
+#########Create primary VPC in the eu-west-1 region#####################
 module "vpc_primary" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.13.0"

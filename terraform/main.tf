@@ -19,19 +19,19 @@ module "moses_vpc" {
 
 
 
-module "moses_rds" {
-    source = "./modules/rds" # Path to your RDS module
+#module "moses_rds" {
+#    source = "./modules/rds" # Path to your RDS module
   
-    providers = {
-      aws = aws
-    }
+#    providers = {
+#      aws = aws
+#    }
   
-    vpc_primary_db_subnet_group_name = module.moses_vpc.vpc_primary_db_subnet_group_name
-    vpc_secondary_db_subnet_group_name = module.moses_vpc.vpc_secondary_db_subnet_group_name
+#    vpc_primary_db_subnet_group_name = module.moses_vpc.vpc_primary_db_subnet_group_name
+#    vpc_secondary_db_subnet_group_name = module.moses_vpc.vpc_secondary_db_subnet_group_name
   
-    primary_db_security_group_id = module.moses_vpc.primary_db_security_group_id
-    secondary_db_security_group_id = module.moses_vpc.secondary_db_security_group_id
-}
+#    primary_db_security_group_id = module.moses_vpc.primary_db_security_group_id
+#    secondary_db_security_group_id = module.moses_vpc.secondary_db_security_group_id
+#}
 
 
 

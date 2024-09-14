@@ -1,4 +1,8 @@
 
+locals {
+  cluster_name = "pip-olumoko-project"
+}
+
 
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"

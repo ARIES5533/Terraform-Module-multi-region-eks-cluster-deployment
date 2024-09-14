@@ -46,7 +46,7 @@ module "security-group" {
     depends_on = [module.vpc_primary]
 
     tags = {
-        name = "olumoko-sg"
+        name = "olumoko-sg-1"
     }
        
 }

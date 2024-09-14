@@ -19,7 +19,7 @@ resource "aws_db_instance" "primary_postgres" {
   vpc_security_group_ids = [var.primary_db_security_group_id]
 
   tags = {
-    Name = "Primary_PostgreSQL_Database"
+    Name = "Olumoko_Primary_PostgreSQL_Database"
   }
 }
 
@@ -42,6 +42,6 @@ resource "aws_db_instance" "secondary_postgres" {
   vpc_security_group_ids = [var.secondary_db_security_group_id]
 
   tags = {
-    Name = "Secondary_PostgreSQL_Database"
+    Name = "Olumoko_Secondary_PostgreSQL_Database"
   }
 }

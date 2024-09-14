@@ -40,5 +40,5 @@ data "aws_availability_zones" "us-west-2" {
 }
 
 locals {
-  cluster_name = "pip-olumoko-cluster"
+  cluster_name = "pip-olumoko-project"
 }

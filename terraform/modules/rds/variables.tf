@@ -1,3 +1,4 @@
+
 variable "primary_region" {
   description = "AWS region"
   type        = string

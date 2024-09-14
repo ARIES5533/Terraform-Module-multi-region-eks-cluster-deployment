@@ -38,7 +38,3 @@ data "aws_availability_zones" "us-west-2" {
   provider = aws.us-west-2
   state    = "available"
 }
-
-locals {
-  cluster_name = "pip-olumoko-cluster"
-}

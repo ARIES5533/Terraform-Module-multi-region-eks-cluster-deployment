@@ -109,7 +109,7 @@ resource "aws_db_subnet_group" "primary" {
   subnet_ids  = module.vpc_primary.private_subnets
 
   tags = {
-    Name = "Primary-DB-Subnet-Group"
+    Name = "Olumoko-Primary-DB-Subnet-Group"
   }
 }
 
@@ -135,7 +135,7 @@ resource "aws_db_subnet_group" "secondary" {
   subnet_ids  = module.vpc_secondary.private_subnets
 
   tags = {
-    Name = "Secondary-DB-Subnet-Group"
+    Name = "Olumoko-Secondary-DB-Subnet-Group"
   }
 }
 

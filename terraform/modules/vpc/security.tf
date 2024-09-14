@@ -214,7 +214,6 @@ module "secondary-security-group_db" {
     tags = {
         name = "olumoko-sg-db"
     }
-       
 }
 
 

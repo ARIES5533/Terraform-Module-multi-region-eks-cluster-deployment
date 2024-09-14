@@ -24,6 +24,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: ${{ matrix.region }}
 
       - name: Install kubectl
@@ -48,6 +49,6 @@ jobs:
 
       - name: Verify Deployment
         run: |
-          kubectl get pods -n default
+          kubectl get pods -n olumoko-voting-app
 
     environment: ${{ matrix.region }}
